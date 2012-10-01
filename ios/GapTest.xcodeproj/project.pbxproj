@@ -7,7 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		008DC85A1616462400F5105A /* www in Resources */ = {isa = PBXBuildFile; fileRef = 008DC8591616462400F5105A /* www */; };
+		0018E623161A0D6D007AC646 /* HtmlWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0018E611161A0D6D007AC646 /* HtmlWebViewController.m */; };
+		0018E624161A0D6D007AC646 /* PushNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 0018E613161A0D6D007AC646 /* PushNotification.m */; };
+		0018E625161A0D6D007AC646 /* PushNotificationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0018E615161A0D6D007AC646 /* PushNotificationManager.m */; };
+		0018E626161A0D6D007AC646 /* PWGetNearestZoneRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0018E617161A0D6D007AC646 /* PWGetNearestZoneRequest.m */; };
+		0018E627161A0D6D007AC646 /* PWPushStatRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0018E619161A0D6D007AC646 /* PWPushStatRequest.m */; };
+		0018E628161A0D6D007AC646 /* PWRegisterDeviceRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0018E61B161A0D6D007AC646 /* PWRegisterDeviceRequest.m */; };
+		0018E629161A0D6D007AC646 /* PWRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0018E61D161A0D6D007AC646 /* PWRequest.m */; };
+		0018E62A161A0D6D007AC646 /* PWRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0018E61F161A0D6D007AC646 /* PWRequestManager.m */; };
+		0018E62B161A0D6D007AC646 /* PWSetTagsRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0018E621161A0D6D007AC646 /* PWSetTagsRequest.m */; };
+		0018E62C161A0D6D007AC646 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 0018E622161A0D6D007AC646 /* README */; };
+		0018E638161A0E5F007AC646 /* libCordova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 301BF535109A57CC0062928A /* libCordova.a */; };
+		00C4CF67161A308F009C3540 /* www in Resources */ = {isa = PBXBuildFile; fileRef = 00C4CF66161A308F009C3540 /* www */; };
 		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
@@ -15,7 +26,6 @@
 		1F766FE113BBADB100FB74C0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F766FDC13BBADB100FB74C0 /* Localizable.strings */; };
 		1F766FE213BBADB100FB74C0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F766FDF13BBADB100FB74C0 /* Localizable.strings */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
-		301BF552109A68D80062928A /* libCordova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 301BF535109A57CC0062928A /* libCordova.a */; };
 		301BF5B5109A6A2B0062928A /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 301BF5B4109A6A2B0062928A /* AddressBook.framework */; };
 		301BF5B7109A6A2B0062928A /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 301BF5B6109A6A2B0062928A /* AddressBookUI.framework */; };
 		301BF5B9109A6A2B0062928A /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 301BF5B8109A6A2B0062928A /* AudioToolbox.framework */; };
@@ -45,6 +55,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		0018E636161A0E3E007AC646 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = CordovaLib;
+		};
 		301BF534109A57CC0062928A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */;
@@ -52,17 +69,29 @@
 			remoteGlobalIDString = D2AAC07E0554694100DB518D;
 			remoteInfo = CordovaLib;
 		};
-		301BF550109A68C00062928A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = D2AAC07D0554694100DB518D;
-			remoteInfo = CordovaLib;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		008DC8591616462400F5105A /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = ../www; sourceTree = "<group>"; };
+		0018E610161A0D6D007AC646 /* HtmlWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HtmlWebViewController.h; sourceTree = "<group>"; };
+		0018E611161A0D6D007AC646 /* HtmlWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HtmlWebViewController.m; sourceTree = "<group>"; };
+		0018E612161A0D6D007AC646 /* PushNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushNotification.h; sourceTree = "<group>"; };
+		0018E613161A0D6D007AC646 /* PushNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushNotification.m; sourceTree = "<group>"; };
+		0018E614161A0D6D007AC646 /* PushNotificationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushNotificationManager.h; sourceTree = "<group>"; };
+		0018E615161A0D6D007AC646 /* PushNotificationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushNotificationManager.m; sourceTree = "<group>"; };
+		0018E616161A0D6D007AC646 /* PWGetNearestZoneRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PWGetNearestZoneRequest.h; sourceTree = "<group>"; };
+		0018E617161A0D6D007AC646 /* PWGetNearestZoneRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PWGetNearestZoneRequest.m; sourceTree = "<group>"; };
+		0018E618161A0D6D007AC646 /* PWPushStatRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PWPushStatRequest.h; sourceTree = "<group>"; };
+		0018E619161A0D6D007AC646 /* PWPushStatRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PWPushStatRequest.m; sourceTree = "<group>"; };
+		0018E61A161A0D6D007AC646 /* PWRegisterDeviceRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PWRegisterDeviceRequest.h; sourceTree = "<group>"; };
+		0018E61B161A0D6D007AC646 /* PWRegisterDeviceRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PWRegisterDeviceRequest.m; sourceTree = "<group>"; };
+		0018E61C161A0D6D007AC646 /* PWRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PWRequest.h; sourceTree = "<group>"; };
+		0018E61D161A0D6D007AC646 /* PWRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PWRequest.m; sourceTree = "<group>"; };
+		0018E61E161A0D6D007AC646 /* PWRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PWRequestManager.h; sourceTree = "<group>"; };
+		0018E61F161A0D6D007AC646 /* PWRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PWRequestManager.m; sourceTree = "<group>"; };
+		0018E620161A0D6D007AC646 /* PWSetTagsRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PWSetTagsRequest.h; sourceTree = "<group>"; };
+		0018E621161A0D6D007AC646 /* PWSetTagsRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PWSetTagsRequest.m; sourceTree = "<group>"; };
+		0018E622161A0D6D007AC646 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		00C4CF66161A308F009C3540 /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -110,7 +139,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
+				0018E638161A0E5F007AC646 /* libCordova.a in Frameworks */,
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
@@ -131,6 +160,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0018E60F161A0D6D007AC646 /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				0018E610161A0D6D007AC646 /* HtmlWebViewController.h */,
+				0018E611161A0D6D007AC646 /* HtmlWebViewController.m */,
+				0018E612161A0D6D007AC646 /* PushNotification.h */,
+				0018E613161A0D6D007AC646 /* PushNotification.m */,
+				0018E614161A0D6D007AC646 /* PushNotificationManager.h */,
+				0018E615161A0D6D007AC646 /* PushNotificationManager.m */,
+				0018E616161A0D6D007AC646 /* PWGetNearestZoneRequest.h */,
+				0018E617161A0D6D007AC646 /* PWGetNearestZoneRequest.m */,
+				0018E618161A0D6D007AC646 /* PWPushStatRequest.h */,
+				0018E619161A0D6D007AC646 /* PWPushStatRequest.m */,
+				0018E61A161A0D6D007AC646 /* PWRegisterDeviceRequest.h */,
+				0018E61B161A0D6D007AC646 /* PWRegisterDeviceRequest.m */,
+				0018E61C161A0D6D007AC646 /* PWRequest.h */,
+				0018E61D161A0D6D007AC646 /* PWRequest.m */,
+				0018E61E161A0D6D007AC646 /* PWRequestManager.h */,
+				0018E61F161A0D6D007AC646 /* PWRequestManager.m */,
+				0018E620161A0D6D007AC646 /* PWSetTagsRequest.h */,
+				0018E621161A0D6D007AC646 /* PWSetTagsRequest.m */,
+				0018E622161A0D6D007AC646 /* README */,
+			);
+			path = Plugins;
+			sourceTree = "<group>";
+		};
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -171,14 +226,14 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				00C4CF66161A308F009C3540 /* www */,
+				0018E60F161A0D6D007AC646 /* Plugins */,
 				301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */,
 				080E96DDFE201D6D7F000001 /* Classes */,
-				307C750510C5A3420062BCA9 /* Plugins */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
-				008DC8591616462400F5105A /* www */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -240,14 +295,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		307C750510C5A3420062BCA9 /* Plugins */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Plugins;
-			path = GapTest/Plugins;
-			sourceTree = SOURCE_ROOT;
-		};
 		308D052D1370CCF300D202BF /* icons */ = {
 			isa = PBXGroup;
 			children = (
@@ -298,11 +345,12 @@
 				1D60588D0D05DD3D006BFB54 /* Resources */,
 				1D60588E0D05DD3D006BFB54 /* Sources */,
 				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+				00C4CF6C161A3467009C3540 /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				301BF551109A68C00062928A /* PBXTargetDependency */,
+				0018E637161A0E3E007AC646 /* PBXTargetDependency */,
 			);
 			name = GapTest;
 			productName = GapTest;
@@ -377,13 +425,27 @@
 				3088BBC0154F3926009F9C59 /* Default-Portrait~ipad.png in Resources */,
 				3088BBC1154F3926009F9C59 /* Default@2x~iphone.png in Resources */,
 				3088BBC2154F3926009F9C59 /* Default~iphone.png in Resources */,
-				008DC85A1616462400F5105A /* www in Resources */,
+				0018E62C161A0D6D007AC646 /* README in Resources */,
+				00C4CF67161A308F009C3540 /* www in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		00C4CF6C161A3467009C3540 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "rsync -pvtrlL --cvs-exclude \\\n$PROJECT_DIR/../src* \\\n$BUILT_PRODUCTS_DIR/$CONTENTS_FOLDER_PATH/www";
+		};
 		304B58A110DAC018002A0835 /* Touch www folder */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -408,16 +470,25 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
+				0018E623161A0D6D007AC646 /* HtmlWebViewController.m in Sources */,
+				0018E624161A0D6D007AC646 /* PushNotification.m in Sources */,
+				0018E625161A0D6D007AC646 /* PushNotificationManager.m in Sources */,
+				0018E626161A0D6D007AC646 /* PWGetNearestZoneRequest.m in Sources */,
+				0018E627161A0D6D007AC646 /* PWPushStatRequest.m in Sources */,
+				0018E628161A0D6D007AC646 /* PWRegisterDeviceRequest.m in Sources */,
+				0018E629161A0D6D007AC646 /* PWRequest.m in Sources */,
+				0018E62A161A0D6D007AC646 /* PWRequestManager.m in Sources */,
+				0018E62B161A0D6D007AC646 /* PWSetTagsRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		301BF551109A68C00062928A /* PBXTargetDependency */ = {
+		0018E637161A0E3E007AC646 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CordovaLib;
-			targetProxy = 301BF550109A68C00062928A /* PBXContainerItemProxy */;
+			targetProxy = 0018E636161A0E3E007AC646 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -463,6 +534,8 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_WARN_OBJCPP_ARC_ABI = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Charles Ryder (G47RLCM8L2)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -470,9 +543,16 @@
 				GCC_PREFIX_HEADER = "GapTest/GapTest-Prefix.pch";
 				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"\"$(TARGET_BUILD_DIR)/usr/local/lib/include\"",
+					"\"$(OBJROOT)/UninstalledProducts/include\"",
+					"\"$(BUILT_PRODUCTS_DIR)\"",
+				);
 				INFOPLIST_FILE = "GapTest/GapTest-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				PRODUCT_NAME = GapTest;
+				PROVISIONING_PROFILE = "D17387CE-14EB-4D4A-82EE-3042DD8269AF";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -483,11 +563,18 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_WARN_OBJCPP_ARC_ABI = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GapTest/GapTest-Prefix.pch";
 				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"\"$(TARGET_BUILD_DIR)/usr/local/lib/include\"",
+					"\"$(OBJROOT)/UninstalledProducts/include\"",
+					"\"$(BUILT_PRODUCTS_DIR)\"",
+				);
 				INFOPLIST_FILE = "GapTest/GapTest-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				PRODUCT_NAME = GapTest;
@@ -499,11 +586,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 307D28A1123043350040C0FA /* CordovaBuildSettings.xcconfig */;
 			buildSettings = {
-				ARCHS = (
-					armv6,
-					armv7,
-				);
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Charles Ryder (G47RLCM8L2)";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -513,8 +597,10 @@
 					"\"$(TARGET_BUILD_DIR)/usr/local/lib/include\"",
 					"\"$(OBJROOT)/UninstalledProducts/include\"",
 					"\"$(BUILT_PRODUCTS_DIR)\"",
+					"PushNotificationManager/**",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"-weak_framework",
 					CoreFoundation,
@@ -528,6 +614,7 @@
 					"-all_load",
 					"-Obj-C",
 				);
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "D17387CE-14EB-4D4A-82EE-3042DD8269AF";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = NO;
 				USER_HEADER_SEARCH_PATHS = "";
@@ -538,11 +625,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 307D28A1123043350040C0FA /* CordovaBuildSettings.xcconfig */;
 			buildSettings = {
-				ARCHS = (
-					armv6,
-					armv7,
-				);
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -552,8 +636,10 @@
 					"\"$(TARGET_BUILD_DIR)/usr/local/lib/include\"",
 					"\"$(OBJROOT)/UninstalledProducts/include\"",
 					"\"$(BUILT_PRODUCTS_DIR)\"",
+					"PushNotificationManager/**",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"-weak_framework",
 					CoreFoundation,
