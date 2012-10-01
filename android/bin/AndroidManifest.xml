@@ -47,6 +47,10 @@
             android:label="@string/title_activity_main"
             android:configChanges="orientation|keyboardHidden"
 			android:launchMode="singleTop">
+			<intent-filter>
+		         <action android:name="com.hansoninc.gaptest.MESSAGE"/>
+		         <category android:name="android.intent.category.DEFAULT"/>
+		     </intent-filter>
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
