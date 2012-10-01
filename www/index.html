@@ -34,7 +34,23 @@
 	<script type="text/javascript" charset="utf-8" src="js/PushNotification.js"></script>
 	<script type="text/javascript" charset="utf-8" src="js/core.js"></script>
 	<script type="text/javascript">
-		app.initialize();
+		app.initialize();	
+
+    // alert dialog dismissed
+    function alertDismissed() {
+        // do something
+    }
+
+    // Show a custom alert
+    //
+    function showAlert() {
+        navigator.notification.alert(
+            'Bus, Metro, walking.',  // message
+            alertDismissed,         // callback
+            'Yeah, I have a BMW',            // title
+            'Done'                  // buttonName
+        );
+    }
 	</script>
 
 </body>

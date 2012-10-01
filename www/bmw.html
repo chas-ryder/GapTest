@@ -8,8 +8,27 @@
 	<link rel="stylesheet" href="themes/jquery.mobile.structure-1.1.1.min.css" />
 	<script type="text/javascript" src="js/jquery.mobile-1.1.1.min.js"></script>
 	<script type="text/javascript" src="js/cordova-2.1.0.js"></script>
+	 <script type="text/javascript" charset="utf-8">
+
+    // alert dialog dismissed
+    function alertDismissed() {
+        // do something
+    }
+
+    // Show a custom alert
+    //
+    function showAlert() {
+        navigator.notification.alert(
+            'Bus, Metro, walking.',  // message
+            alertDismissed,         // callback
+            'Yeah, I have a BMW',            // title
+            'Done'                  // buttonName
+        );
+    }
+
+    </script>
 </head>
-<body>
+<body onload="init();">
 	
 	<div data-role="page">
 
@@ -17,8 +36,8 @@
 			<h1>Hanson</h1>
 		</div><!-- /header -->
 	
-		<div data-role="content">	
-			<p>I LOVE BMW&rsquo;s</p>
+		<div data-role="content">
+			<p><a href="#" onclick="showAlert(); return false;">I LOVE BMW&rsquo;s</a></p>
 					
 			<a href="#" data-role="button" data-direction="reverse" data-rel="back" data-icon="arrow-l">Back</a>
 		</div><!-- /content -->
