@@ -5,7 +5,7 @@
  * should not be modified by hand.
  */
 
-package com.chasryder.gaptest;
+package com.hansoninc.gaptest;
 
 public final class R {
     public static final class attr {

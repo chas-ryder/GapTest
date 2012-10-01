@@ -1,8 +1,10 @@
-package com.chasryder.gaptest;
+package com.hansoninc.gaptest;
 
 import org.apache.cordova.*;
+
+import com.hansoninc.gaptest.R;
+
 import android.os.Bundle;
-import android.app.Activity;
 import android.view.Menu;
 
 public class MainActivity extends DroidGap {
