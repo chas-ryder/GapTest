@@ -29,7 +29,7 @@
 #import "MainViewController.h"
 
 #import <Cordova/CDVPlugin.h>
-
+#import "PushNotificationManager.h"
 
 @implementation AppDelegate
 
@@ -69,7 +69,7 @@
     self.viewController = [[MainViewController alloc] init];
     self.viewController.useSplashScreen = YES;
     self.viewController.wwwFolderName = @"www";
-    self.viewController.startPage = @"index.html";
+    self.viewController.startPage = @"src/index.html";
     self.viewController.invokeString = invokeString;
 
     // NOTE: To control the view's frame size, override [self.viewController viewWillAppear:] in your view controller.
@@ -133,6 +133,11 @@
     // IPhone doesn't support upside down by default, while the IPad does.  Override to allow all orientations always, and let the root view controller decide whats allowed (the supported orientations mask gets intersected).
     NSUInteger supportedInterfaceOrientations = (1 << UIInterfaceOrientationPortrait) | (1 << UIInterfaceOrientationLandscapeLeft) | (1 << UIInterfaceOrientationLandscapeRight) | (1 << UIInterfaceOrientationPortraitUpsideDown);
     return supportedInterfaceOrientations;
+}
+
+/* Push Notification Support */
+- (void) onPushAccepted:(PushNotificationManager *)pushManager withNotification:(NSDictionary *)pushNotification {
+    NSLog(@"Push notification received");
 }
 
 @end
